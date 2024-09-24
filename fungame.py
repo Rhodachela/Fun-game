@@ -1,12 +1,12 @@
 import random
 
 def guess_the_number():
-    secret_number = random.randint(10, 20)
+    secret_number = random.randint(15, 20)
     play_again = True
 
     while play_again:
         try:
-            guess = int(input("Guess secret number between 10 and 20: "))
+            guess = int(input("Guess secret number between 15 and 20: "))
         except ValueError:
             print("Enter a valid integer")
             continue
